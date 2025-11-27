@@ -77,10 +77,11 @@ else:
 terms_link.click_input()
 time.sleep(3)
 
-# Switch to newly opened window
-# desktop = Application(backend="uia").connect(title_re=".*HP Smart Terms of Use.*")
-# terms_window = desktop.window(title_re=".*HP Smart Terms of Use.*")     
-# terms_window.wait("visible", timeout=30)
-# terms_window.set_focus()    
-# print("Switched to Terms of Use window.")
-# time.sleep(3)
+Switch to newly opened window
+desktop = Application(backend="uia").connect(title_re=".*HP Smart Terms of Use.*")
+terms_window = desktop.window(title_re=".*HP Smart Terms of Use.*")     
+terms_window.wait("visible", timeout=30)
+terms_window.set_focus()    
+print("Switched to Terms of Use window.")
+
+time.sleep(3)
